@@ -1,13 +1,12 @@
 /* eslint-disable react/prop-types */
 import "./Card.css";
-import { useEffect } from "react";
-const Card = ({ name = "Breed Dry Dog Food", rating = "4.0", price = "$100", reviewCnt = "35", img }) => {
-  useEffect(() => {
-    const element = document.querySelectorAll(".nodeBg-28125288");
-
-    element.forEach((element) => (element.style.backgroundImage = `url(${img})`));
-  });
-
+const Card = ({
+  name = "Breed Dry Dog Food",
+  rating = "4.0",
+  price = "$100",
+  reviewCnt = "35",
+  img = "https://i.imgur.com/UYrdDFI.jpeg",
+}) => {
   return (
     <div className="parent-card">
       <div className="cart-1-23323 pos-abs" id="id-28125282">
@@ -69,42 +68,48 @@ const Card = ({ name = "Breed Dry Dog Food", rating = "4.0", price = "$100", rev
             </div>
           </div>
         </div>
-        <div className="cart-1-351848 pos-abs" id="id-28125283">
-          <div className="frame-604-1-233585 pos-abs" id="id-28125287">
-            <div className="c-71rdoexxtrl-1-1-31556 pos-abs" id="id-28125288">
-              <div className="nodeBg-28125288 pos-abs image-div bg-no-repeat  bg-crop" id="id-bg-28125288">
-                {" "}
+      </div>
+      <div className="cart-1-351848 pos-abs" id="id-28125283">
+        <div className="frame-604-1-233585 pos-abs" id="id-28125287">
+          <div className="c-71rdoexxtrl-1-1-31556 pos-abs" id="id-28125288">
+            <div
+              className="nodeBg-28125288 pos-abs image-div bg-no-repeat  bg-crop"
+              id="id-bg-28125288"
+              style={{
+                backgroundImage: `url(${img})`,
+              }}
+            >
+              {" "}
+            </div>
+          </div>
+        </div>
+        <div className="frame-568-1-16248 pos-abs" id="id-28125284">
+          <div className="fill-heart-1-460918 pos-abs" id="id-28125285">
+            <div className="ellipse-12-1-251419 pos-abs" id="id-I28125285_55346"></div>
+            <div className="heart-small-1-7077 pos-abs" id="id-I28125285_55380">
+              <div className="vector-1-15484 pos-abs" id="id-I28125285_55380_55376">
+                <div
+                  className="nodeBg-I28125285_55380_55376 pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div"
+                  id="id-bg-I28125285_55380_55376"
+                ></div>
               </div>
             </div>
           </div>
-          <div className="frame-568-1-16248 pos-abs" id="id-28125284">
-            <div className="fill-heart-1-460918 pos-abs" id="id-28125285">
-              <div className="ellipse-12-1-251419 pos-abs" id="id-I28125285_55346"></div>
-              <div className="heart-small-1-7077 pos-abs" id="id-I28125285_55380">
-                <div className="vector-1-15484 pos-abs" id="id-I28125285_55380_55376">
+          <div className="fill-eye-1-396000 pos-abs" id="id-28125286">
+            <div className="ellipse-13-1-238896 pos-abs" id="id-I28125286_55354"></div>
+            <div className="quick-view-1-165375 pos-abs" id="id-I28125286_55355">
+              <div className="group-1-167024 pos-abs" id="id-I28125286_55355_55350">
+                <div className="vector-1-708480 pos-abs" id="id-I28125286_55355_55351">
                   <div
-                    className="nodeBg-I28125285_55380_55376 pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div"
-                    id="id-bg-I28125285_55380_55376"
+                    className="nodeBg-I28125286_55355_55351 pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div"
+                    id="id-bg-I28125286_55355_55351"
                   ></div>
                 </div>
-              </div>
-            </div>
-            <div className="fill-eye-1-396000 pos-abs" id="id-28125286">
-              <div className="ellipse-13-1-238896 pos-abs" id="id-I28125286_55354"></div>
-              <div className="quick-view-1-165375 pos-abs" id="id-I28125286_55355">
-                <div className="group-1-167024 pos-abs" id="id-I28125286_55355_55350">
-                  <div className="vector-1-708480 pos-abs" id="id-I28125286_55355_55351">
-                    <div
-                      className="nodeBg-I28125286_55355_55351 pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div"
-                      id="id-bg-I28125286_55355_55351"
-                    ></div>
-                  </div>
-                  <div className="vector-2-7161 pos-abs" id="id-I28125286_55355_55352">
-                    <div
-                      className="nodeBg-I28125286_55355_55352 pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div"
-                      id="id-bg-I28125286_55355_55352"
-                    ></div>
-                  </div>
+                <div className="vector-2-7161 pos-abs" id="id-I28125286_55355_55352">
+                  <div
+                    className="nodeBg-I28125286_55355_55352 pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div"
+                    id="id-bg-I28125286_55355_55352"
+                  ></div>
                 </div>
               </div>
             </div>

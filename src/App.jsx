@@ -7,7 +7,12 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <br />
       <Products />
+      <br />
+      <br />
+      <br />
+      <span />
       <Footer />
     </div>
   );

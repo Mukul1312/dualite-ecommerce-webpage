@@ -15,19 +15,21 @@ const Products = () => {
   return (
     <div className="products-container">
       <h1 style={{ textAlign: "center" }}>Explore our Product</h1>
-      <div
-        style={{ padding: "1em", display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "30px", margin: "10px" }}
-      >
-        {products.map((product) => (
-          <Card
-            name={product.name}
-            price={"$" + product.price}
-            key={product.name}
-            rating={product.rating}
-            reviewCnt={product.reviews}
-            img={product.image}
-          />
-        ))}
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div
+          style={{ padding: "1em", display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "30px", margin: "10px" }}
+        >
+          {products.map((product) => (
+            <Card
+              name={product.name}
+              price={"$" + product.price}
+              key={product.name}
+              rating={product.rating}
+              reviewCnt={product.reviews}
+              img={product.image}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
